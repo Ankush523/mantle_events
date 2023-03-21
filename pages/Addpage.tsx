@@ -13,7 +13,7 @@ const Addpage: React.FC = () => {
     const provider = useProvider();
     const {data:signer} = useSigner();
     console.log(signer)
-    const contractAddress = '0xDb7D5180b11a678104feF1Bc83b3753525CeE4F9'; // replace with your contract address
+    const contractAddress = '0x4Cdd259891F6214018F7FcD05cF675896c1f3d49'; // replace with your contract address
     const contract = new ethers.Contract(contractAddress, contractABI, signer || provider)  ;
     
     const [num1, setNum1] = useState(0);
@@ -35,6 +35,7 @@ const Addpage: React.FC = () => {
   
     return (
         <div>
+        <ConnectButton />
         <form onSubmit={handleSubmit}>
           <label>
             Number 1:
