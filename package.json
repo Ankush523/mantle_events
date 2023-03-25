@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantleio/sdk": "^0.1.4",
     "@rainbow-me/rainbowkit": "^0.12.2",
     "@types/node": "18.15.5",
     "@types/react": "^18.0.28",
@@ -18,11 +19,13 @@
     "eslint-config-next": "13.2.4",
     "ethers": "^5.7.2",
     "next": "13.2.4",
+    "node-fetch": "^3.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "socket.io-client": "^4.6.1",
     "typescript": "^5.0.2",
     "wagmi": "^0.12.4",
-    "web3": "^1.9.0"
+    "web3": "^1.9.0",
+    "ws": "^8.13.0"
   }
 }
